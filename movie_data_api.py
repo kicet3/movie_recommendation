@@ -8,7 +8,7 @@ import requests
 from collections import OrderedDict
 
 movie_list = range(0,100000)
-api_key='2faef36b3d788d7fa02d1b445b851ccb'
+api_key=''
 movie = "https://api.themoviedb.org/3/movie/{movies}?api_key={key}"
 movie_review = "https://api.themoviedb.org/3/movie/{movies}/reviews?api_key={key}"
 
