@@ -44,10 +44,10 @@ def recommend(input_movie, matrix, n, similar_genre=True):
 	for title in matrix.columns:
 		if title == input_movie:
 			continue
-        # rating comparison
+        
 		cor = pearsonR(matrix[input_movie], matrix[title])
         
-        # genre comparison
+        
 		if similar_genre and len(input_genres) > 0:
 			temp_genres = meta[meta['original_title'] == title]['Genres'].iloc(0)[0]
 
